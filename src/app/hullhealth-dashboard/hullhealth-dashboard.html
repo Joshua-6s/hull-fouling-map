@@ -1,0 +1,17 @@
+<div *ngIf="isBrowser" class="map-container">
+  <div id="map" class="map"></div>
+  <div class="legend-controls">
+    <h3>Legend</h3>
+    <div class="legend-item" *ngFor="let item of legendItems">
+      <input 
+        type="checkbox" 
+        [checked]="item.visible" 
+        (change)="toggleLayer(item.color)"
+        [id]="'toggle-' + item.color"
+      />
+      <label [for]="'toggle-' + item.color">
+        {{ item.label }}
+      </label>
+    </div>
+  </div>
+</div>

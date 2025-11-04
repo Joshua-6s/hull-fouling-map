@@ -1,3 +1,5 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { HullhealthDashboard } from './hullhealth-dashboard/hullhealth-dashboard';
+export const routes: Routes = [
+    {path:"hull",component:HullhealthDashboard}
+];
