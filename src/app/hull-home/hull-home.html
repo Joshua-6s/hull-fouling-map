@@ -1,0 +1,11 @@
+<button (click)="toggleHeatMap()">
+  {{ isHeatMap ? 'Show Region' : 'Show Heatmap' }}
+</button>
+
+<div *ngIf="isHeatMap">
+  <app-heatmap></app-heatmap>
+</div>
+
+<div *ngIf="!isHeatMap">
+  <app-hullhealth-dashboard></app-hullhealth-dashboard>
+</div>

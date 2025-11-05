@@ -1,0 +1,20 @@
+<div *ngIf="isBrowser" class="heatmap-container">
+  <div id="ocean-heatmap" class="heatmap-map"></div>
+
+  <!-- 🌡️ Floating Legend -->
+  <div class="heatmap-legend leaflet-control">
+    <h4>Heatmap Intensity</h4>
+        <label>
+      <input type="checkbox" checked (change)="toggleIntensity(0.9, $event)" />
+      Tropical Zone
+    </label>
+    <label>
+      <input type="checkbox" checked (change)="toggleIntensity(0.5, $event)" />
+      Temperate Zone
+    </label>
+    <label>
+      <input type="checkbox" checked (change)="toggleIntensity(0.1, $event)" />
+      Cold Zone
+    </label>
+  </div>
+</div>

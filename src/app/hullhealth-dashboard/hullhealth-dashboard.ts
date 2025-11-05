@@ -3,7 +3,6 @@ import { isPlatformBrowser, CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-hullhealth-dashboard',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './hullhealth-dashboard.html',
   styleUrls: ['./hullhealth-dashboard.css'],
